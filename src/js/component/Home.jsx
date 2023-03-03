@@ -1,63 +1,21 @@
 import React from "react";
-
-//include images into your bundle
-
-import NavBar from "./NavBar.jsx";
-import Jumbtron from "./Jumbotron.jsx";
-import Card from "./Card.jsx";
+import Navbar from "./NavBar.jsx";
+import Jumbotron from "./Jumbotron.jsx";
 import Footer from "./Footer.jsx";
+import {CardSet} from "./CardSet.jsx";
 
-//create your first component
-const Home = () => {
+
+function App() {
   return (
     <>
-      <NavBar />
-      <div className="contenedor">
-      <Jumbtron
-        display="A Warm Welcome!"
-        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, itaque mollitia amet neque beatae rerum sunt aspernatur sapiente distinctio quos, enim quas quae maxime et molestias aliquam libero harum dolor?"
-        bttnLabel="Call to action!"
-      />
-      <div className="container-fluid">
-        <div className="row row-cols-3">
-          <div className="col-sm-3 com-md-3">
-            <Card
-              imgSrc="https://dummyimage.com/500x325"
-              title="Card title"
-              text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex doloremque vel enim accusamus dolorum animi nobis maiores."
-              btnLabel="Find Out More!"
-            />
-          </div>
-          <div className="col-sm-3 com-md-3">
-            <Card
-              imgSrc="https://dummyimage.com/500x325"
-              title="Card title"
-              text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex doloremque vel enim accusamus dolorum animi nobis maiores."
-              btnLabel="Find Out More!"
-            />
-          </div>
-          <div className="col-sm-3 com-md-3">
-            <Card
-              imgSrc="https://dummyimage.com/500x325"
-              title="Card title"
-              text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex doloremque vel enim accusamus dolorum animi nobis maiores."
-              btnLabel="Find Out More!"
-            />
-          </div>
-          <div className="col-sm-3 com-md-3">
-            <Card
-              imgSrc="https://dummyimage.com/500x325"
-              title="Card title"
-              text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex doloremque vel enim accusamus dolorum animi nobis maiores."
-              btnLabel="Find Out More!"
-            />
-          </div>
+      <Navbar />
+      <div className="container">
+        <Jumbotron />
+        <CardSet />
         </div>
-      </div>
-      </div>
       <Footer />
     </>
   );
-};
+}
 
-export default Home;
+export default App;

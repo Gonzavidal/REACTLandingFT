@@ -7,8 +7,8 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Footer = () => {
   return (
     <div className="text-center pt-4 link-secondary text-white bg-dark">
-    Copyright &#169; Your Website 2023 
-  </div>
+      Copyright &#169; Your Website 2023
+    </div>
   );
 };
 

@@ -1,7 +1,11 @@
-.contenedor {
+.container {
     width: 100%;
     padding-right: 150px;
     padding-left: 150px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.card-footer {
+    text-align: center;
 }
